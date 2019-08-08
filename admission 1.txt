@@ -1,0 +1,35 @@
+
+#include <stdio.h>
+#include <conio.h>
+struct student
+{
+    int id;
+    int age;
+    int marks;
+};
+int main()
+{
+    struct student st;
+    int i;
+    for(i=0;i<0;i++)
+    {
+        printf("enter the id,age,marks of student %d\n",i+1);
+        scanf("%d%d%d",&st.id,&st.age,&st.marks);
+        if(st.age>20 && st.marks>=0 && st.marks<=100)
+        {
+         printf("data is valid");
+        }
+        { 
+  
+         if(st.marks>=65)
+        {
+            printf("eligible for admission\n");
+            }
+            else
+                printf("not eligible for admission\n");
+        }
+        else
+            printf("data is not valid\n");
+    }
+    return 0;
+}
